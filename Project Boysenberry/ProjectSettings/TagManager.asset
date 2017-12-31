@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Machines
+  - Squisher
+  - Saw
   layers:
   - Default
   - TransparentFX
@@ -40,4 +43,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Playmat
+    uniqueID: 3519293047
+    locked: 0
+  - name: Player
+    uniqueID: 3507512303
+    locked: 0
+  - name: Machines
+    uniqueID: 4200780297
+    locked: 0
+  - name: Arena
+    uniqueID: 3179861305
     locked: 0
