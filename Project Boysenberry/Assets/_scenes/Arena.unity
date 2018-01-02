@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 705588948}
   - component: {fileID: 705588952}
   - component: {fileID: 705588951}
+  - component: {fileID: 705588950}
   m_Layer: 0
   m_Name: Player 2
   m_TagString: Player
@@ -334,6 +335,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &705588950
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 705588947}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c77500f890c6943a9b62d213c26f77fb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!61 &705588951
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -570,6 +588,11 @@ Prefab:
     - target: {fileID: 4806427843667464, guid: 87090a30840d8514ca4f89ddb82da796, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 50619005121183568, guid: 87090a30840d8514ca4f89ddb82da796,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87090a30840d8514ca4f89ddb82da796, type: 2}
