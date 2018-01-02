@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour {
 
     public float playerNumber;
     public float speed;
-    public float turnSpeed;
     public float zAxis;
     public float timeBetweenShoves;
     public GameObject target;
@@ -39,16 +38,14 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetButton(fireButtonName) && timer >= timeBetweenShoves)
         {
             Shove();
-        }
+        }        
     }
 
     //Check every frame for player movement and apply movement
     void FixedUpdate()
     {
         Move();
-        transform.LookAt(target.transform.position);
-        transform.Rotate(new Vector3(0,-90,zAxis),Space.Self);//correcting the original rotation
-        
+        LookAt();
     }
 
     void Move(){
@@ -56,7 +53,16 @@ public class PlayerController : MonoBehaviour {
         Vector2 movement = new Vector2(turnInputValue, movementInputValue);
         rb2d.AddForce(movement * speed);
         //Vector2 movement = transform.up * movementInputValue * speed * Time.deltaTime;
-        //rb2d.MovePosition(rb2d.position + movement);
+        //rb2d.MovePosition(rb2d.position + movement * Time.deltaTime);
+    }
+
+    void LookAt()
+    {
+        //transform.LookAt(target.transform.position);
+        Vector3 vectorToTarget = target.transform.position - transform.position;
+        float angle = (Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg) - 90;
+        Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
+        transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * speed);
     }
 
     void Shove()

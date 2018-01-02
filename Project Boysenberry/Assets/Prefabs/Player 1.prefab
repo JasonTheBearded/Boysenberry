@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 212579734101702594}
   - component: {fileID: 50619005121183568}
   - component: {fileID: 61712730913142032}
-  - component: {fileID: 114737313726053214}
   - component: {fileID: 95701828503386552}
+  - component: {fileID: 114737313726053214}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -37,13 +37,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1652778888480940}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -2.25, y: 0, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!50 &50619005121183568
 Rigidbody2D:
   serializedVersion: 4
@@ -117,7 +117,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b189acec32c1e7445b8b4382013dbcba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerNumber: 1
   speed: 40
+  zAxis: -90
+  timeBetweenShoves: 0.5
+  target: {fileID: 0}
 --- !u!212 &212579734101702594
 SpriteRenderer:
   m_ObjectHideFlags: 1
