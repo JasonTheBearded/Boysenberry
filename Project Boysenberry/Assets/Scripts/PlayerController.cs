@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour {
     public float zAxis;
     public float timeBetweenShoves;
     public GameObject target;
+    public Collider2D attackTrigger;
 
     private Rigidbody2D rb2d;
     private Animator animator;
@@ -21,13 +22,14 @@ public class PlayerController : MonoBehaviour {
     
     
 
-    private void Start()
+    private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         movementAxisName = "Vertical" + playerNumber;
         turnAxisName = "Horizontal" + playerNumber;
         fireButtonName = "Player" + playerNumber + "Fire1";
+        attackTrigger.enabled = false;
     }
 
     private void Update(){
@@ -38,7 +40,11 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetButton(fireButtonName) && timer >= timeBetweenShoves)
         {
             Shove();
-        }        
+        }
+        else
+        {
+            attackTrigger.enabled = false;
+        }
     }
 
     //Check every frame for player movement and apply movement
@@ -69,6 +75,6 @@ public class PlayerController : MonoBehaviour {
     {
         timer = 0f;
         animator.SetTrigger("playerShove");
+        attackTrigger.enabled = true;
     }
-
 }

@@ -8,6 +8,8 @@ TagManager:
   - Saw
   - SquisherSet2
   - SquisherSet1
+  - Shove
+  - Squisher
   layers:
   - Default
   - TransparentFX
