@@ -36,7 +36,7 @@ public class SquisherMovement : MonoBehaviour {
         //While that distance is greater than a very small amount (Epsilon, almost zero):
         while (sqrRemainingDistance > float.Epsilon)
         {
-            yield return new WaitForSeconds(.1f);
+            yield return new WaitForSeconds(.5f);
             transform.position = Vector3.MoveTowards(transform.position, target, step);
             sqrRemainingDistance = (transform.position - newPosition).sqrMagnitude;
             yield return null;

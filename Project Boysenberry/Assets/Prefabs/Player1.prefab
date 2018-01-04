@@ -107,7 +107,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.13}
+  m_Offset: {x: 0, y: -0.03}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -118,7 +118,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7, y: 1.7}
+  m_Size: {x: 1.7, y: 1.92}
   m_EdgeRadius: 0
 --- !u!61 &61884033561267514
 BoxCollider2D:
@@ -132,7 +132,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.21}
+  m_Offset: {x: 0, y: 1.02}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -143,7 +143,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7, y: 0.16}
+  m_Size: {x: 1.7, y: 0.54}
   m_EdgeRadius: 0
 --- !u!95 &95897238733580438
 Animator:
@@ -177,8 +177,12 @@ MonoBehaviour:
   speed: 40
   zAxis: -90
   timeBetweenShoves: 0.1
+  lives: 3
+  respawnWait: 3
+  dead: 0
   target: {fileID: 0}
   attackTrigger: {fileID: 61884033561267514}
+  playerLives: {fileID: 0}
 --- !u!114 &114765028197010784
 MonoBehaviour:
   m_ObjectHideFlags: 1
