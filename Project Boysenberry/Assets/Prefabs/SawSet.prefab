@@ -39,9 +39,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4216312394186870}
+  - component: {fileID: 114607622894001130}
   m_Layer: 0
   m_Name: SawSet
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -196,6 +197,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b3a967ed0e44c640bad7ac156328f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114607622894001130
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1188205113649476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22eeda5ac309dc24a9cf9617fef2d8fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 3
 --- !u!114 &114947990471533040
 MonoBehaviour:
   m_ObjectHideFlags: 1

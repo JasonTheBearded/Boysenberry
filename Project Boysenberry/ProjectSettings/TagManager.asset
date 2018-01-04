@@ -10,6 +10,10 @@ TagManager:
   - SquisherSet1
   - Shove
   - Squisher
+  - Death
+  - Player1Lives
+  - Player2Lives
+  - spikes
   layers:
   - Default
   - TransparentFX
