@@ -175,12 +175,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNumber: 1
   speed: 40
-  zAxis: -90
   timeBetweenShoves: 0.1
   lives: 3
   respawnWait: 3
   dead: 0
   target: {fileID: 0}
+  bloodSplat: {fileID: 1740322111229224, guid: e1442902a4f1947ac85dc1e223569e29, type: 2}
   attackTrigger: {fileID: 61884033561267514}
   playerLives: {fileID: 0}
 --- !u!114 &114765028197010784

@@ -20,10 +20,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4496965582159118}
   - component: {fileID: 198657637824018590}
+  - component: {fileID: 114768076995266970}
   - component: {fileID: 199498291515905118}
   m_Layer: 0
   m_Name: Blood Particle
-  m_TagString: Untagged
+  m_TagString: BloodSplat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,12 +36,28 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1740322111229224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 17, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114768076995266970
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1740322111229224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c93aed4ecaa6cf54290a81f116850474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodSplats:
+  - {fileID: 1329601903112044, guid: c5e16f0a76889b1439e490ce1496be7c, type: 2}
+  - {fileID: 1152940051951878, guid: 99f0f96d18144d0449cc16c9d54dd8aa, type: 2}
+  - {fileID: 1662993125126782, guid: 321d821720fb6404481a0f86fe305aa1, type: 2}
+  - {fileID: 1255211589563942, guid: c743d44238b30e84381f910036bab20d, type: 2}
 --- !u!198 &198657637824018590
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -48,7 +65,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1740322111229224}
   serializedVersion: 5
-  lengthInSec: 2
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   looping: 0
@@ -101,7 +118,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -625043251
+  randomSeed: 1718681829
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3397,8 +3414,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -787454993
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0

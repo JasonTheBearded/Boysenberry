@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour {
 
     public int playerNumber;
     public float speed;
-    public float zAxis;
     public float timeBetweenShoves;
     public int lives;
     public float respawnWait;
@@ -19,9 +18,9 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D rb2d;
     private Animator animator;
     private GameController gameController;
-    
     private Vector3 startPosition;
     private Vector3 targetStartPosition;
+    private Vector3 deathPosition;
     private float timer;
     private string movementAxisName;
     private string turnAxisName;
@@ -108,7 +107,9 @@ public class PlayerController : MonoBehaviour {
 
     public void LoseLife()
     {
+        deathPosition = transform.position;
         gameController.dead = true;
+        gameController.Death(deathPosition);
         Debug.Log("taking life off and preparing respawn");
         lives--;
         playerLives.text = "Player " + playerNumber + ": " + lives;

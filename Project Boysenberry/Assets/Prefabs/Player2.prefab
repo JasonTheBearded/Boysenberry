@@ -107,7 +107,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.21}
+  m_Offset: {x: 0, y: 1.01}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -118,7 +118,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7, y: 0.16}
+  m_Size: {x: 1.7, y: 0.52}
   m_EdgeRadius: 0
 --- !u!61 &61650699135264346
 BoxCollider2D:
@@ -188,13 +188,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNumber: 2
   speed: 40
-  zAxis: 90
   timeBetweenShoves: 0.1
-  lives: 4
+  lives: 3
+  respawnWait: 3
   dead: 0
-  playerLives: {fileID: 0}
-  target: {fileID: 1585959552547970, guid: 18ce268782af55e4fa4f3881a07e0ef5, type: 2}
+  target: {fileID: 0}
+  bloodSplat: {fileID: 1740322111229224, guid: e1442902a4f1947ac85dc1e223569e29, type: 2}
   attackTrigger: {fileID: 61064172288470486}
+  playerLives: {fileID: 0}
 --- !u!212 &212110078601577618
 SpriteRenderer:
   m_ObjectHideFlags: 1

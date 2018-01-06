@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c93aed4ecaa6cf54290a81f116850474
+timeCreated: 1515216550
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - bloodParticle: {fileID: 198657637824018590, guid: e1442902a4f1947ac85dc1e223569e29,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

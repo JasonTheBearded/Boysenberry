@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_scenes/JasonArena.unity
+- path: Assets/_scenes/Arena.unity
   isLoaded: 1
   isActive: 1
