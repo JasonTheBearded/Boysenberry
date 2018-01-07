@@ -334,7 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe56e19fd4766e4398597f74828b9b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 10
+  delay: 15
   rend: {fileID: 1979275409}
 --- !u!212 &1979275409
 SpriteRenderer:

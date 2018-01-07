@@ -37,7 +37,7 @@ public class GameController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(gameOver && Input.GetKey("R"))
+		if(gameOver && Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
@@ -56,6 +56,8 @@ public class GameController : MonoBehaviour {
 
     public void GameOver()
     {
+        GameObject player1 = GameObject.Find("Player1");
+        GameObject player2 = GameObject.Find("Player2");
         player1Lives = GameObject.Find("Player1").GetComponent<PlayerController>().lives;
         player2Lives = GameObject.Find("Player2").GetComponent<PlayerController>().lives;
 
@@ -68,6 +70,9 @@ public class GameController : MonoBehaviour {
         {
             player2WinPanel.SetActive(true);
         }
+
+        player1.SetActive(false);
+        player2.SetActive(false);
     }
 
     public void Death(Vector3 deathPosition)
