@@ -10,7 +10,7 @@ public class StartListener : MonoBehaviour {
 		
         if (Input.anyKey)
         {
-            SceneManager.LoadScene("Assets/_scenes/Arena", LoadSceneMode.Single);
+            SceneManager.LoadScene("Arena", LoadSceneMode.Single);
         }
 
 	}

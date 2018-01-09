@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour {
     public GameObject bloodSplat;
     public GameObject player1WinPanel;
     public GameObject player2WinPanel;
+    public GameObject restartText;
     public float startWait;
     public float hazardWait;
     public float respawnWait;
@@ -28,6 +29,7 @@ public class GameController : MonoBehaviour {
     {
         player1WinPanel.SetActive(false);
         player2WinPanel.SetActive(false);
+        restartText.SetActive(false);
     }
     void Start () {
         gameOver = false;
@@ -62,6 +64,7 @@ public class GameController : MonoBehaviour {
         player2Lives = GameObject.Find("Player2").GetComponent<PlayerController>().lives;
 
         gameOver = true;
+        restartText.SetActive(true);
         if (player1Lives > player2Lives)
         {
             player1WinPanel.SetActive(true);
@@ -69,6 +72,7 @@ public class GameController : MonoBehaviour {
         else
         {
             player2WinPanel.SetActive(true);
+            
         }
 
         player1.SetActive(false);
